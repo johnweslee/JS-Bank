@@ -1,9 +1,5 @@
 'use strict';
 
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// BANKIST APP
-
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -228,56 +224,3 @@ btnSort.addEventListener('click', function (e) {
   displayMovements(currentAccount.movements, !stateSort);
   stateSort = !stateSort;
 });
-
-/////////////////////////////////////////////////
-// LECTURES
-
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
-
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-
-const euroToUSD = 1.1;
-/* const movementsUSD = movements.map(movement => movement * euroToUSD);
-console.log(movementsUSD); */
-
-/* const movementDescriptions = movements.map((movement, index) => `Movement ${index + 1}, You have ${movement > 0 ? `deposited` : `withdrawn`} ${Math.abs(movement)}`);
-console.log(movementDescriptions);
-
-const deposits = movements.filter(movement => movement > 0);
-console.log(deposits);
-
-const withdrawals = movements.filter(movement => movement < 0);
-console.log(withdrawals);
-
-const balance = movements.reduce(function (accumulator, current) {
-  return accumulator + current;
-}, 0);
-console.log(balance); */
-
-//Maximum Value
-/* const maximumMovement = movements.reduce((accumulator, current) => accumulator > current ? accumulator: current, movements[0]);
-console.log(maximumMovement); */
-
-//Total deposits in USD - PipeLine
-/* const totalDepositsUSD = movements
-  .filter(movement => movement > 0)
-  .map(movement => movement * euroToUSD)
-  .reduce((accumulator, currenctMovement) => accumulator + currenctMovement, 0);
-console.log(totalDepositsUSD);
- */
-
-//first withdrawal
-/* const firstWithdrawal = movements.find(currentMovement => currentMovement < 0);
-console.log(movements);
-console.log(firstWithdrawal);
-
-//find account
-console.log(accounts);
-const account = accounts.find(currentAccount => currentAccount.owner === 'Jessica Davis');
-console.log(account); */
-
-/////////////////////////////////////////////////
